@@ -7,7 +7,6 @@ import { Button, Collapse, NavbarBrand, Navbar, NavItem, NavLink, Nav, Container
 function IndexNavbar(props) {
 	const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
 	const [navbarCollapse, setNavbarCollapse] = React.useState(false);
-	const [headingColor, setHeadingColor] = React.useState("black");
 	const toggleNavbarCollapse = () => {
 		setNavbarCollapse(!navbarCollapse);
 		document.documentElement.classList.toggle("nav-open");
@@ -37,8 +36,23 @@ function IndexNavbar(props) {
 		<Navbar className={classnames("fixed-top", navbarColor)} expand="lg">
 			<Container>
 				<div className="navbar-translate">
-					<NavbarBrand data-placement="bottom" href="/index" target="_blank">
-						D_Coder
+					<NavbarBrand data-placement="bottom" href="/index">
+						<h3
+							className="m-0 font-weight-bold"
+							style={{ display: "flex", justifyContent: "flex-start", alignItems: "center" }}
+						>
+							{" "}
+							<img
+								alt="cover"
+								src={"./golden.png"}
+								style={{
+									height: "calc(1.5vh + 1.5vh)",
+									margin: 0,
+									padding: 0,
+								}}
+							/>
+							D_Coders
+						</h3>
 					</NavbarBrand>
 					<button
 						aria-expanded={navbarCollapse}
@@ -55,51 +69,18 @@ function IndexNavbar(props) {
 				<Collapse className="justify-content-end" navbar isOpen={navbarCollapse}>
 					<Nav navbar>
 						<NavItem>
-							<NavLink
-								data-placement="bottom"
-								href="https://twitter.com/CreativeTim?ref=creativetim"
-								target="_blank"
-								title="Follow us on Twitter"
-							>
-								<i className="fa fa-twitter" />
-								<p className="d-lg-none">Twitter</p>
-							</NavLink>
-						</NavItem>
-						<NavItem>
-							<NavLink
-								data-placement="bottom"
-								href="https://www.facebook.com/CreativeTim?ref=creativetim"
-								target="_blank"
-								title="Like us on Facebook"
-							>
-								<i className="fa fa-facebook-square" />
-								<p className="d-lg-none">Facebook</p>
-							</NavLink>
-						</NavItem>
-						<NavItem>
-							<NavLink
-								data-placement="bottom"
-								href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
-								target="_blank"
-								title="Follow us on Instagram"
-							>
-								<i className="fa fa-instagram" />
-								<p className="d-lg-none">Instagram</p>
-							</NavLink>
+							<NavLink href="/events">Events</NavLink>
 						</NavItem>
 
 						<NavItem>
-							<NavLink
-								href="https://demos.creative-tim.com/paper-kit-react/#/documentation?ref=pkr-index-navbar"
-								target="_blank"
-							>
-								<i className="nc-icon nc-book-bookmark" /> Documentation
-							</NavLink>
+							<NavLink>Projects</NavLink>
+						</NavItem>
+
+						<NavItem>
+							<NavLink>Meet Our Seniors</NavLink>
 						</NavItem>
 						<NavItem>
-							<Button className="btn-round" color="danger" href="#pablo" target="_blank" disabled>
-								Upgrade to Pro
-							</Button>
+							<Button color="danger">Member Login</Button>
 						</NavItem>
 					</Nav>
 				</Collapse>
