@@ -79,6 +79,10 @@ function IndexNavbar(props) {
 						<NavItem>
 							<NavLink>Meet Our Seniors</NavLink>
 						</NavItem>
+
+						<NavItem>
+							<NavLink href="/AboutUs">About Us</NavLink>
+						</NavItem>
 						<NavItem>
 							<Button color="danger">Member Login</Button>
 						</NavItem>

@@ -13,6 +13,7 @@ import LandingPage from "views/examples/LandingPage.js";
 import ProfilePage from "views/examples/ProfilePage.js";
 import RegisterPage from "views/examples/RegisterPage.js";
 import Events from "./views/Events/events"
+import AboutUs from "./views/About Us/AboutUs"
 // others
 
 ReactDOM.render(
@@ -38,6 +39,10 @@ ReactDOM.render(
       <Route
         path={"/events"}
         exact component={Events}/>
+
+      <Route
+        path={"/AboutUs"}
+        exact component={AboutUs}/>
       <Redirect to="/index" />
     </Switch>
   </BrowserRouter>,
