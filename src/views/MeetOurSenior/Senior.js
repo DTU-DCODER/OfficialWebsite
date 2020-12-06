@@ -7,8 +7,11 @@ const Senior = () => {
 	return (
 		<div>
 			<IndexNavbar noPhoto />
-			<div className="events-container container">
-				<div className={"row col-12"}>
+			<br />
+			<br />
+			<div className="events-container container-fluid">
+				<div style={{display:"flex", justifyContent:"center"}} className={"row col-12"}>
+					<Card />
 					<Card />
 					<Card />
 					<Card />
