@@ -44,9 +44,9 @@ function IndexNavbar(props) {
 							{" "}
 							<img
 								alt="logo"
-								src={"./logo blue.png"}
+								src={"./blue.png"}
 								style={{
-									height: "calc(3.5vh + 3.5vh)",
+									height: "calc(1.5vh + 1.5vh)",
 									margin: 0,
 									padding: 0,
 								}}
