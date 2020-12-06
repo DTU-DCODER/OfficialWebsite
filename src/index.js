@@ -18,6 +18,7 @@ import MeetOurSeniors from "./views/MeetOurSenior/Senior";
 import Projects from "./views/Projects/projects";
 import AboutUs from "./views/About Us/AboutUs";
 import HomePage from "views/Home Page/Homepage";
+import Coming from "views/Coming Up/Coming";
 // others
 
 ReactDOM.render(
@@ -28,6 +29,7 @@ ReactDOM.render(
 			<Route path="/register-page" render={(props) => <RegisterPage {...props} />} />
 			<Route path={"/events"} exact component={Events} />
 			<Route path={"/projects"} exact component={Projects} />
+			<Route path={"/member"} exact component={Coming} />
 
 			<Route path={"/AboutUs"} exact component={AboutUs} />
 			<Route path={"/meetOurSeniors"} exact component={MeetOurSeniors} />
