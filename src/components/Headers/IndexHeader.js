@@ -1,21 +1,3 @@
-/*!
-
-=========================================================
-* Paper Kit React - v1.2.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/paper-kit-react
-
-* Copyright 2020 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/paper-kit-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 /*eslint-disable*/
 import React from "react";
 
@@ -31,14 +13,26 @@ function IndexHeader() {
         className="page-header section-dark"
         style={{
           backgroundImage:
-            "url(" + require("assets/img/antoine-barres.jpg") + ")",
+          // "https://images.static-collegedunia.com/public/college_data/images/campusimage/15196461451428402392.2c48ae01cf9e4d059b4471bf5754dc41%20dtu.jpg?tr=w-205,h-130,c-force"
+           "url(" + require("assets/img/bgbgbg.png") + ")",
         }}
+        //antoine-barres.jpg
       >
         <div className="filter" />
         <div className="content-center">
           <Container>
             <div className="title-brand">
-              <h1 className="presentation-title">Paper Kit React</h1>
+              <img
+                  alt="logo"
+                  src={"./logo w.png"}
+                  style={{
+                    height: "calc(23vh + 23vh)",
+                    margin: 0,
+                    padding: 0,
+                  }}
+                />
+              {/* <img src={require("../../assets/img/logo w.png")} alt='LOGO' /> */}
+              <h1 className="presentation-title"><b>D_CODER</b></h1>
               <div className="fog-low">
                 <img alt="..." src={require("assets/img/fog-low.png")} />
               </div>
@@ -46,8 +40,8 @@ function IndexHeader() {
                 <img alt="..." src={require("assets/img/fog-low.png")} />
               </div>
             </div>
-            <h2 className="presentation-subtitle text-center">
-              Make your mark with a Free Bootstrap 4 (Reactstrap) UI Kit!
+            <h2 className="presentation-subtitle text-center"><b>
+              THE MOST ACTIVE CODING SOCIECTY OF DTU </b>
             </h2>
           </Container>
         </div>
@@ -58,17 +52,7 @@ function IndexHeader() {
           }}
         />
         <h6 className="category category-absolute">
-          Designed and coded by{" "}
-          <a
-            href="https://www.creative-tim.com?ref=pkr-index-page"
-            target="_blank"
-          >
-            <img
-              alt="..."
-              className="creative-tim-logo"
-              src={require("assets/img/creative-tim-white-slim2.png")}
-            />
-          </a>
+          Coded with ❤️ by {" "} D_CODER
         </h6>
       </div>
     </>

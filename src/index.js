@@ -12,7 +12,8 @@ import NucleoIcons from "views/NucleoIcons.js";
 import LandingPage from "views/examples/LandingPage.js";
 import ProfilePage from "views/examples/ProfilePage.js";
 import RegisterPage from "views/examples/RegisterPage.js";
-import Events from "./views/Events/events"
+import Events from "./views/Events/events";
+import Projects from "./views/Projects/projects";
 import AboutUs from "./views/About Us/AboutUs"
 // others
 
@@ -39,6 +40,9 @@ ReactDOM.render(
       <Route
         path={"/events"}
         exact component={Events}/>
+      <Route
+        path={"/projects"}
+        exact component={Projects}/>
 
       <Route
         path={"/AboutUs"}
