@@ -51,9 +51,7 @@ function IndexHeader() {
             backgroundImage: "url(" + require("assets/img/clouds.png") + ")",
           }}
         />
-        <h6 className="category category-absolute">
-          Coded with ❤️ by {" "} D_CODER
-        </h6>
+        
       </div>
     </>
   );

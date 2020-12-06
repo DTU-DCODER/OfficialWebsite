@@ -31,26 +31,26 @@ function DemoFooter() {
             <ul>
               <li>
                 <a
-                  href="https://www.creative-tim.com?ref=pkr-footer"
-                  target="_blank"
+                  href="/AboutUs"
+                  
                 >
-                  Creative Tim
+                  About Us
                 </a>
               </li>
               <li>
                 <a
-                  href="http://blog.creative-tim.com/?ref=pkr-footer"
-                  target="_blank"
+                  href="/projects"
+                 
                 >
-                  Blog
+                  Projects
                 </a>
               </li>
               <li>
                 <a
-                  href="https://www.creative-tim.com/license?ref=pkr-footer"
-                  target="_blank"
+                  href="/events"
+              
                 >
-                  Licenses
+                  Events
                 </a>
               </li>
             </ul>
@@ -58,7 +58,7 @@ function DemoFooter() {
           <div className="credits ml-auto">
             <span className="copyright">
               © {new Date().getFullYear()}, made with{" "}
-              <i className="fa fa-heart heart" /> by Creative Tim
+              <i className="fa fa-heart heart" /> by D_CODER
             </span>
           </div>
         </Row>

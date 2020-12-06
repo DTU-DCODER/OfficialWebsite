@@ -2,6 +2,7 @@ import React from "react";
 import IndexNavbar from "../../components/Navbars/IndexNavbar";
 import "./style.css";
 import SDC from "../../assets/gifs/SDC.gif";
+import DemoFooter from "components/Footers/DemoFooter";
 
 const Projects = () => {
 	return (
@@ -195,6 +196,7 @@ const Projects = () => {
           
 				</div>
 			</div>
+			<DemoFooter/>
 		</div>
 	);
 };

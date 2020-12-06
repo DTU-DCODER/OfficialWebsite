@@ -1,3 +1,4 @@
+import DemoFooter from "components/Footers/DemoFooter";
 import React from "react";
 import IndexNavbar from "../../components/Navbars/IndexNavbar";
 import "./style.css";
@@ -51,6 +52,7 @@ const Events = () => {
           
 				</div>
 			</div>
+			<DemoFooter/>
 		</div>
 	);
 };

@@ -45,7 +45,7 @@ export default function OutlinedCard() {
          <AssignmentIcon fontSize="large" color="secondary"/>        Vision
         </Typography>
         <Typography className={classes.vision} variant="body2" component="p" >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Collaboration over competition.
         </Typography>
       </CardContent>
     </Card>
