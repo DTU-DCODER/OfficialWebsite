@@ -31,7 +31,7 @@ function IndexNavbar(props) {
 		return function cleanup() {
 			window.removeEventListener("scroll", updateNavbarColor);
 		};
-	});
+	}, [props.noPhoto]);
 	return (
 		<Navbar className={classnames("fixed-top", navbarColor)} expand="lg">
 			<Container>
@@ -43,15 +43,15 @@ function IndexNavbar(props) {
 						>
 							{" "}
 							<img
-								alt="cover"
-								src={"./golden.png"}
+								alt="logo"
+								src={"./logo blue.png"}
 								style={{
-									height: "calc(1.5vh + 1.5vh)",
+									height: "calc(3.5vh + 3.5vh)",
 									margin: 0,
 									padding: 0,
 								}}
 							/>
-							D_Coders
+							D_Coder
 						</h3>
 					</NavbarBrand>
 					<button
@@ -73,7 +73,7 @@ function IndexNavbar(props) {
 						</NavItem>
 
 						<NavItem>
-							<NavLink>Projects</NavLink>
+							<NavLink href='/projects'>Projects</NavLink>
 						</NavItem>
 
 						<NavItem>
@@ -84,7 +84,7 @@ function IndexNavbar(props) {
 							<NavLink href="/AboutUs">About Us</NavLink>
 						</NavItem>
 						<NavItem>
-							<Button color="danger">Member Login</Button>
+							<Button color="primary">Member Login</Button>
 						</NavItem>
 					</Nav>
 				</Collapse>
