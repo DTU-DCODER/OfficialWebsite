@@ -15,16 +15,13 @@ import RegisterPage from "views/examples/RegisterPage.js";
 import Events from "./views/Events/events";
 import Projects from "./views/Projects/projects";
 import AboutUs from "./views/About Us/AboutUs"
+import HomePage from "views/Home Page/Homepage"
 // others
 
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
-      <Route path="/index" render={(props) => <Index {...props} />} />
-      <Route
-        path="/nucleo-icons"
-        render={(props) => <NucleoIcons {...props} />}
-      />
+      
       <Route
         path="/landing-page"
         render={(props) => <LandingPage {...props} />}
@@ -47,7 +44,12 @@ ReactDOM.render(
       <Route
         path={"/AboutUs"}
         exact component={AboutUs}/>
-      <Redirect to="/index" />
+
+      <Route
+              path="/"
+              render={(props) => <HomePage {...props} />}
+            />
+      <Redirect to="/" />
     </Switch>
   </BrowserRouter>,
   document.getElementById("root")

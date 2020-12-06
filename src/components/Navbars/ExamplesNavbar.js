@@ -30,6 +30,7 @@ import {
   NavLink,
   Nav,
   Container,
+  Button,
 } from "reactstrap";
 
 function ExamplesNavbar() {
@@ -72,12 +73,23 @@ function ExamplesNavbar() {
         <div className="navbar-translate">
           <NavbarBrand
             data-placement="bottom"
-            to="/index"
-            target="_blank"
+            to="/"
             title="Coded by Creative Tim"
             tag={Link}
           >
-            Paper Kit 2
+            <img
+								alt="cover"
+								src={"./golden.png"}
+								style={{
+									height: "calc(2vh + 2vh)",
+									marginRight: 10,
+                  padding: 0,
+                  marginBottom: 6,
+								}}
+							/>
+							<span style={{
+									fontSize: 24,
+								}}>D_Coder</span>
           </NavbarBrand>
           <button
             aria-expanded={navbarCollapse}
@@ -91,73 +103,30 @@ function ExamplesNavbar() {
             <span className="navbar-toggler-bar bar3" />
           </button>
         </div>
-        <Collapse
-          className="justify-content-end"
-          navbar
-          isOpen={navbarCollapse}
-        >
-          <Nav navbar>
-            <NavItem>
-              <NavLink to="/index" tag={Link}>
-                <i className="nc-icon nc-layout-11" /> Components
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink
-                href="https://demos.creative-tim.com/paper-kit-react/#/documentation?ref=pkr-examples-navbar"
-                target="_blank"
-              >
-                <i className="nc-icon nc-book-bookmark" /> Documentation
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink
-                data-placement="bottom"
-                href="https://twitter.com/CreativeTim?ref=creativetim"
-                target="_blank"
-                title="Follow us on Twitter"
-              >
-                <i className="fa fa-twitter" />
-                <p className="d-lg-none">Twitter</p>
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink
-                data-placement="bottom"
-                href="https://www.facebook.com/CreativeTim?ref=creativetim"
-                target="_blank"
-                title="Like us on Facebook"
-              >
-                <i className="fa fa-facebook-square" />
-                <p className="d-lg-none">Facebook</p>
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink
-                data-placement="bottom"
-                href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
-                target="_blank"
-                title="Follow us on Instagram"
-              >
-                <i className="fa fa-instagram" />
-                <p className="d-lg-none">Instagram</p>
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink
-                data-placement="bottom"
-                href="https://www.github.com/CreativeTimOfficial?ref=creativetim"
-                target="_blank"
-                title="Star on GitHub"
-              >
-                <i className="fa fa-github" />
-                <p className="d-lg-none">GitHub</p>
-              </NavLink>
-            </NavItem>
-          </Nav>
-        </Collapse>
-      </Container>
-    </Navbar>
+        <Collapse className="justify-content-end" navbar isOpen={navbarCollapse}>
+					<Nav navbar>
+						<NavItem>
+							<NavLink href="/events">Events</NavLink>
+						</NavItem>
+
+						<NavItem>
+							<NavLink>Projects</NavLink>
+						</NavItem>
+
+						<NavItem>
+							<NavLink>Meet Our Seniors</NavLink>
+						</NavItem>
+
+						<NavItem>
+							<NavLink href="/AboutUs">About Us</NavLink>
+						</NavItem>
+						<NavItem>
+							<Button color="danger">Member Login</Button>
+						</NavItem>
+					</Nav>
+				</Collapse>
+			</Container>
+		</Navbar>
   );
 }
 

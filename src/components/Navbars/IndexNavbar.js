@@ -36,7 +36,7 @@ function IndexNavbar(props) {
 		<Navbar className={classnames("fixed-top", navbarColor)} expand="lg">
 			<Container>
 				<div className="navbar-translate">
-					<NavbarBrand data-placement="bottom" href="/index">
+					<NavbarBrand data-placement="bottom" href="/">
 						<h3
 							className="m-0 font-weight-bold"
 							style={{ display: "flex", justifyContent: "flex-start", alignItems: "center" }}
