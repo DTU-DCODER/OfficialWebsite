@@ -1,0 +1,76 @@
+.senior-card-main {
+	box-shadow: 5px 5px 7px 0 rgba(46, 61, 73, 0.15);
+	margin: calc(1vw);
+}
+.senior-card-container {
+	display: flex !important;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+.no-mp {
+	margin: 0;
+	padding: 0;
+}
+
+.senior-card-img-container {
+	margin-top: 10px;
+	width: 150px;
+	overflow: hidden;
+	height: 150px;
+	border-radius: 100px;
+}
+.body-container {
+	width: 40%;
+}
+.left-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+}
+.right-container {
+	width: 60%;
+}
+
+.senior-name {
+	font-size: 15px !important;
+	margin: 10px 0 !important;
+}
+.senior-college {
+	margin-bottom: 10px !important;
+}
+
+.review-content {
+	/* background-color:black; */
+	height: 170px;
+	overflow-y: scroll;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+.review-content::-webkit-scrollbar{
+    display: none;
+}
+.review-content-heading{
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 1093px) {
+	.senior-card-img-container {
+		width: 100px;
+		height: 100px;
+	}
+}
+
+@media screen and (max-width: 769px) {
+	.review-content {
+		/* background-color:black; */
+		height: 155px;
+	}
+	.senior-card-img-container {
+		width: 150px;
+		height: 150px;
+	}
+}
