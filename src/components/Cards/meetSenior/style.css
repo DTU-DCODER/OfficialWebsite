@@ -1,0 +1,24 @@
+.senior-card-container {
+	display: flex;
+	align-items: center;
+    justify-content: flex-start;
+    box-shadow: 5px 5px 7px 0 rgba(46,61,73,.15);
+    margin: calc(1vw);
+}
+.no-mp {
+	margin: 0;
+	padding: 0;
+}
+
+.senior-card-img-container {
+	width: calc(5vh + 5vw);
+	overflow: hidden;
+    height: calc(5vh + 5vw);
+    border-radius: 100px;
+}
+.senior-card-img{
+    position: relative;
+    left: 50%;
+    top: -27%;
+    transform: translateX(-50%);
+}

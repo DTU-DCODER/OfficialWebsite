@@ -12,39 +12,27 @@ import NucleoIcons from "views/NucleoIcons.js";
 import LandingPage from "views/examples/LandingPage.js";
 import ProfilePage from "views/examples/ProfilePage.js";
 import RegisterPage from "views/examples/RegisterPage.js";
-import Events from "./views/Events/events"
-import AboutUs from "./views/About Us/AboutUs"
+import Events from "./views/Events/events";
+import AboutUs from "./views/About Us/AboutUs";
+import MeetOurSeniors from "./views/MeetOurSenior/Senior";
 // others
 
 ReactDOM.render(
-  <BrowserRouter>
-    <Switch>
-      <Route path="/index" render={(props) => <Index {...props} />} />
-      <Route
-        path="/nucleo-icons"
-        render={(props) => <NucleoIcons {...props} />}
-      />
-      <Route
-        path="/landing-page"
-        render={(props) => <LandingPage {...props} />}
-      />
-      <Route
-        path="/profile-page"
-        render={(props) => <ProfilePage {...props} />}
-      />
-      <Route
-        path="/register-page"
-        render={(props) => <RegisterPage {...props} />}
-      />
-      <Route
-        path={"/events"}
-        exact component={Events}/>
+	<BrowserRouter>
+		<Switch>
+			<Route path="/index" render={(props) => <Index {...props} />} />
+			<Route path="/nucleo-icons" render={(props) => <NucleoIcons {...props} />} />
+			<Route path="/landing-page" render={(props) => <LandingPage {...props} />} />
+			<Route path="/profile-page" render={(props) => <ProfilePage {...props} />} />
+			<Route path="/register-page" render={(props) => <RegisterPage {...props} />} />
+			<Route path={"/events"} exact component={Events} />
 
-      <Route
-        path={"/AboutUs"}
-        exact component={AboutUs}/>
-      <Redirect to="/index" />
-    </Switch>
-  </BrowserRouter>,
-  document.getElementById("root")
+			<Route path={"/AboutUs"} exact component={AboutUs} />
+
+			<Route path={"/meetOurSeniors"} exact component={MeetOurSeniors} />
+
+			<Redirect to="/index" />
+		</Switch>
+	</BrowserRouter>,
+	document.getElementById("root")
 );
