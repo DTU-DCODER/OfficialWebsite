@@ -2,6 +2,8 @@ import React from "react";
 import IndexNavbar from "../../components/Navbars/IndexNavbar";
 import "./style.css";
 import SDC from "../../assets/gifs/SDC.gif";
+import VR from "../../assets/gifs/VR.gif";
+import imgDesc from "../../assets/gifs/imgDesc.gif"
 import DemoFooter from "components/Footers/DemoFooter";
 
 const Projects = () => {
@@ -150,7 +152,7 @@ const Projects = () => {
 					<div className="events-body row">
 						<img
 							alt="gif"
-							src={"./assets/foo.jpg"}
+							src={imgDesc}
 							className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 border--round box-shadow-wide gif"
 						/>
 						<div className="event-body-text col-xl-5 col-lg-5 col-md-5 col-sm-5 col-12">
@@ -189,7 +191,7 @@ const Projects = () => {
 						</div>
 						<img
 							alt="cover"
-							src={"./assets/foo.jpg"}
+							src={VR}
 							className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 border--round box-shadow-wide"
 						/>
 					</div>
