@@ -11,11 +11,13 @@ const Events = () => {
 				<p>D_Coders promises ______</p>
 				<div className="events-container-body">
 					<div className="events-body row">
-						<img
-							alt="cover"
-							src={"./assets/foo.jpg"}
-							className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 border--round box-shadow-wide"
-						/>
+						<div className={"col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 events-img-container"}>
+							<img
+								alt="cover"
+								src={"./assets/foo.jpg"}
+								className="border--round box-shadow-wide"
+							/>
+						</div>
 						<div className="event-body-text col-xl-5 col-lg-5 col-md-5 col-sm-5 col-12">
 							<h3 className="event-body-text-heading">Here Goes the Events Heading</h3>
 							<h5 className="event-body-text-content">
@@ -47,12 +49,9 @@ const Events = () => {
 							className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 border--round box-shadow-wide"
 						/>
 					</div>
-
-
-          
 				</div>
 			</div>
-			<DemoFooter/>
+			<DemoFooter />
 		</div>
 	);
 };

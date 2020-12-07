@@ -24,7 +24,7 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-around;
-    margin-bottom: calc(5vh + 5vw);
+    margin: 0 0 calc(5vh + 5vw) 0;
 }
 .event-body-text-heading{
     margin: 0;
@@ -40,4 +40,9 @@
     width: 100%;
     object-fit: contain;
     padding: 0;
+}
+.events-img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
