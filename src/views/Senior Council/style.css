@@ -11,10 +11,9 @@
 }
 
 .img_senior{
-    width: 175px;
+    max-width: 175px;
     margin-top: 40px;
-    border-radius: 100px;
-    
+    border-radius: 100px;    
 }
 
 .senior_container{
