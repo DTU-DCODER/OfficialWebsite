@@ -98,9 +98,7 @@ function IndexNavbar(props) {
 
             </NavItem>
 
-            <NavItem>
-              <NavLink href="/AboutUs">About Us</NavLink>
-            </NavItem>
+            
 
             {isMobile ? null : <NavItem>
               <UncontrolledDropdown className="btn-group">
@@ -110,19 +108,20 @@ function IndexNavbar(props) {
                   caret
                   color="info"
                   data-toggle="dropdown"
-                  type="button"
+				  type="button"
+				  
                 >
-                  Primary
+                  About
                 </DropdownToggle>
                 <DropdownMenu>
-                  <DropdownItem href="/events">
+                  <DropdownItem href="/AboutUs">
                     Mission/Vision
                   </DropdownItem>
-                  <DropdownItem href="#pablo">
-                    Junior Council
+                  <DropdownItem href="/seniorCouncil">
+                    Senior Council
                   </DropdownItem>
-                  <DropdownItem href="#pablo">
-                    Senior Council &nbsp;&nbsp;&nbsp;&nbsp;
+                  <DropdownItem href="/juniorCouncil">
+                    Junior Council &nbsp;&nbsp;&nbsp;&nbsp;
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>

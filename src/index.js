@@ -19,6 +19,8 @@ import Projects from "./views/Projects/projects";
 import AboutUs from "./views/About Us/AboutUs";
 import HomePage from "views/Home Page/Homepage";
 import Coming from "views/Coming Up/Coming";
+import SeniorCouncil from "views/Senior Council/SrCouncil"
+import JuniorCouncil from "views/Junior Council/JrCouncil"
 // others
 
 ReactDOM.render(
@@ -33,6 +35,8 @@ ReactDOM.render(
 
 			<Route path={"/AboutUs"} exact component={AboutUs} />
 			<Route path={"/meetOurSeniors"} exact component={MeetOurSeniors} />
+			<Route path={"/seniorCouncil"} exact component={SeniorCouncil} />
+			<Route path={"/juniorCouncil"} exact component={JuniorCouncil} />
 			<Route path="/" render={(props) => <HomePage {...props} />} />
 			<Redirect to="/" />
 		</Switch>
