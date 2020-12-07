@@ -18,6 +18,8 @@
 	overflow: hidden;
 	height: 150px;
 	border-radius: 100px;
+	display: flex;
+	align-items: center;
 }
 .body-container {
 	width: 40%;
@@ -82,5 +84,5 @@
         width:95%;
         height: 185px;
 	}
-	
+
 }

@@ -25,7 +25,7 @@ function SamplePrevArrow(props) {
 		</div>
 	);
 }
-const Senior = () => {
+const Senior = (props) => {
 	const isMobile = useMediaQuery({ query: "(max-width: 519px)" });
 	const settings = {
 		className: "center",
@@ -49,26 +49,27 @@ const Senior = () => {
 						<Slider style={{ marginLeft: "-4%" }} {...settings}>
 							<div>
 								<div style={{ display: "flex", justifyContent: "center" }} className={"row"}>
-									<Card />
-									<Card />
-									<Card />
-									<Card />
+									<Card name="Mahek Jain" src="https://lh3.googleusercontent.com/d/1ORixU6nr0j5SCzh3pjNzR7G6K4KD5U2E=s220?authuser=0" />
+									<Card name="Siddharth Singh" src="https://lh3.googleusercontent.com/d/1RswASjKfpS3ZDielLDaI3oWm32B_Jr4n=s220?authuser=0" />
+									<Card name="Mahek Jain" src="https://lh3.googleusercontent.com/d/1ORixU6nr0j5SCzh3pjNzR7G6K4KD5U2E=s220?authuser=0" />
+									<Card name="Siddharth Singh" src="https://lh3.googleusercontent.com/d/1RswASjKfpS3ZDielLDaI3oWm32B_Jr4n=s220?authuser=0" />
 								</div>
 							</div>
 							<div>
 								<div style={{ display: "flex", justifyContent: "center" }} className={"row"}>
-									<Card />
-									<Card />
-									<Card />
-									<Card />
+									<Card name="Mahek Jain" src="https://lh3.googleusercontent.com/d/1ORixU6nr0j5SCzh3pjNzR7G6K4KD5U2E=s220?authuser=0" />
+									<Card name="Mahek Jain" src="https://lh3.googleusercontent.com/d/1ORixU6nr0j5SCzh3pjNzR7G6K4KD5U2E=s220?authuser=0" />
+									<Card name="Mahek Jain" src="https://lh3.googleusercontent.com/d/1ORixU6nr0j5SCzh3pjNzR7G6K4KD5U2E=s220?authuser=0" />
+									<Card name="Siddharth Singh" src="https://lh3.googleusercontent.com/d/1RswASjKfpS3ZDielLDaI3oWm32B_Jr4n=s220?authuser=0" />
+
 								</div>
 							</div>
 							<div>
 								<div style={{ display: "flex", justifyContent: "center" }} className={"row"}>
-									<Card />
-									<Card />
-									<Card />
-									<Card />
+									<Card name="Mahek Jain" src="https://lh3.googleusercontent.com/d/1ORixU6nr0j5SCzh3pjNzR7G6K4KD5U2E=s220?authuser=0" />
+									<Card name="Mahek Jain" src="https://lh3.googleusercontent.com/d/1ORixU6nr0j5SCzh3pjNzR7G6K4KD5U2E=s220?authuser=0" />
+									<Card name="Mahek Jain" src="https://lh3.googleusercontent.com/d/1ORixU6nr0j5SCzh3pjNzR7G6K4KD5U2E=s220?authuser=0" />
+									<Card name="Mahek Jain" src="https://lh3.googleusercontent.com/d/1ORixU6nr0j5SCzh3pjNzR7G6K4KD5U2E=s220?authuser=0" />
 								</div>
 							</div>
 						</Slider>
@@ -76,26 +77,26 @@ const Senior = () => {
 						<Slider {...settings}>
 							<div>
 								<div style={{ display: "flex", justifyContent: "center" }} className={"row"}>
-									<Card />
-									<Card />
-									<Card />
-									<Card />
+									<Card name="Mahek Jain" src="https://lh3.googleusercontent.com/d/1ORixU6nr0j5SCzh3pjNzR7G6K4KD5U2E=s220?authuser=0" />
+									<Card name="Siddharth Singh" src="https://lh3.googleusercontent.com/d/1RswASjKfpS3ZDielLDaI3oWm32B_Jr4n=s220?authuser=0" />
+									<Card name="Rahul" src="https://lh3.googleusercontent.com/d/18_vqsNxrB683XMh1ZULtediw8Llkpiq_=s220?authuser=0" />
+									<Card name="Anima Jain" src="https://lh3.googleusercontent.com/d/1enWnSCeBmoRvF29VdshEtbYp6_NbFcKN=s220?authuser=0" />
 								</div>
 							</div>
 							<div>
 								<div style={{ display: "flex", justifyContent: "center" }} className={"row"}>
-									<Card />
-									<Card />
-									<Card />
-									<Card />
+									<Card name="Mahek Jain" src="https://lh3.googleusercontent.com/d/1ORixU6nr0j5SCzh3pjNzR7G6K4KD5U2E=s220?authuser=0" />
+									<Card name="Mahek Jain" src="https://lh3.googleusercontent.com/d/1ORixU6nr0j5SCzh3pjNzR7G6K4KD5U2E=s220?authuser=0" />
+									<Card name="Mahek Jain" src="https://lh3.googleusercontent.com/d/1ORixU6nr0j5SCzh3pjNzR7G6K4KD5U2E=s220?authuser=0" />
+									<Card name="Mahek Jain" src="https://lh3.googleusercontent.com/d/1ORixU6nr0j5SCzh3pjNzR7G6K4KD5U2E=s220?authuser=0" />
 								</div>
 							</div>
 							<div>
 								<div style={{ display: "flex", justifyContent: "center" }} className={"row"}>
-									<Card />
-									<Card />
-									<Card />
-									<Card />
+									<Card name="Mahek Jain" src="https://lh3.googleusercontent.com/d/1ORixU6nr0j5SCzh3pjNzR7G6K4KD5U2E=s220?authuser=0" />
+									<Card name="Mahek Jain" src="https://lh3.googleusercontent.com/d/1ORixU6nr0j5SCzh3pjNzR7G6K4KD5U2E=s220?authuser=0" />
+									<Card name="Mahek Jain" src="https://lh3.googleusercontent.com/d/1ORixU6nr0j5SCzh3pjNzR7G6K4KD5U2E=s220?authuser=0" />
+									<Card name="Siddharth Singh" src="https://lh3.googleusercontent.com/d/1RswASjKfpS3ZDielLDaI3oWm32B_Jr4n=s220?authuser=0" />
 								</div>
 							</div>
 						</Slider>

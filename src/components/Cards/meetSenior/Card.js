@@ -1,17 +1,17 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Card, CardImg, CardBody, CardTitle, CardText, Button } from "reactstrap";
 import "./style.css";
 
-const CardCom = () => {
+const CardCom = (props) => {
 	return (
 		<Card className={"col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12 senior-card-main"}>
 			<div className="senior-card-container ">
 				<div className={"body-container"}>
 					<div className={"left-container"}>
 						<div className={"senior-card-img-container"}>
-							<img className="senior-card-img" src="./assets/user.png" alt="profileImg" />
+							<img className="senior-card-img" src={props.src} alt="profileImg" />
 						</div>
-						<h6 className="no-mp senior-name">This is A Junk Name</h6>
+						<h6 className="no-mp senior-name">{props.name}</h6>
 
 						<h6 className="no-mp senior-college">Company</h6>
 					</div>
