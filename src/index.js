@@ -22,6 +22,7 @@ import Coming from "views/Coming Up/Coming";
 import SeniorCouncil from "views/Senior Council/SrCouncil"
 import JuniorCouncil from "views/Junior Council/JrCouncil"
 // others
+import "./index.css"
 
 ReactDOM.render(
 	<BrowserRouter>

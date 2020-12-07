@@ -32,15 +32,14 @@ function IndexNavbar(props) {
   React.useEffect(() => {
     const updateNavbarColor = () => {
       if (document.documentElement.scrollTop > 299 || document.body.scrollTop > 299) {
-        setNavbarColor("");
+        setNavbarColor("navbar-custom");
       } else if (document.documentElement.scrollTop < 300 || document.body.scrollTop < 300) {
         setNavbarColor("navbar-transparent");
       }
     };
 
     if (props.noPhoto) {
-      console.log("hello");
-      setNavbarColor("");
+      setNavbarColor("navbar-custom");
     } else {
       window.addEventListener("scroll", updateNavbarColor);
     }
@@ -55,13 +54,11 @@ function IndexNavbar(props) {
         <div className="navbar-translate">
           <NavbarBrand data-placement="bottom" href="/">
             <h3
-              className="m-0 font-weight-bold"
-              style={{display: "flex", justifyContent: "flex-start", alignItems: "center"}}
-            >
+              className="m-0 font-weight-bold coder-heading">
               {" "}
               <img
                 alt="logo"
-                src={"./blue.png"}
+                src={"./white.png"}
                 style={{
                   height: "calc(1.5vh + 1.5vh)",
                   margin: 0,
@@ -86,7 +83,7 @@ function IndexNavbar(props) {
         <Collapse className="justify-content-end" navbar isOpen={navbarCollapse}>
           <Nav navbar>
             <NavItem>
-              <NavLink href="/events">Events</NavLink>
+              <NavLink className={"navbar-btn"} href="/events">Events</NavLink>
             </NavItem>
 
             <NavItem>
@@ -98,65 +95,16 @@ function IndexNavbar(props) {
 
             </NavItem>
 
-            
+            <NavItem>
+              <NavLink href="/meetOurSeniors">Council</NavLink>
+            </NavItem>
 
-            {isMobile ? null : <NavItem>
-              <UncontrolledDropdown className="btn-group">
-                <DropdownToggle
-                  aria-expanded={false}
-                  aria-haspopup={true}
-                  caret
-                  color="info"
-                  data-toggle="dropdown"
-				  type="button"
-				  
-                >
-                  About
-                </DropdownToggle>
-                <DropdownMenu>
-                  <DropdownItem href="/AboutUs">
-                    Mission/Vision
-                  </DropdownItem>
-                  <DropdownItem href="/seniorCouncil">
-                    Senior Council
-                  </DropdownItem>
-                  <DropdownItem href="/juniorCouncil">
-                    Junior Council &nbsp;&nbsp;&nbsp;&nbsp;
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
-            </NavItem>}
 
             <NavItem>
               <Button color="primary" href="/member">
                 Member Login
               </Button>
             </NavItem>
-            {isMobile ? <NavItem>
-              <UncontrolledDropdown className="btn-group">
-                <DropdownToggle
-                  aria-expanded={false}
-                  aria-haspopup={true}
-                  caret
-                  color="info"
-                  data-toggle="dropdown"
-                  type="button"
-                >
-                  Primary
-                </DropdownToggle>
-                <DropdownMenu>
-                  <DropdownItem href="/events">
-                    Mission/Vision
-                  </DropdownItem>
-                  <DropdownItem href="#pablo">
-                    Junior Council
-                  </DropdownItem>
-                  <DropdownItem href="#pablo">
-                    Senior Council &nbsp;&nbsp;&nbsp;&nbsp;
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
-            </NavItem> : null}
 
 
           </Nav>

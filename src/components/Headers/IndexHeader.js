@@ -51,7 +51,7 @@ function IndexHeader() {
             backgroundImage: "url(" + require("assets/img/clouds.png") + ")",
           }}
         />
-        
+
       </div>
     </>
   );
