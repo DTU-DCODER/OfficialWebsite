@@ -44,17 +44,18 @@
 
 .review-content {
 	/* background-color:black; */
-	height: 170px;
+	height: 200px;
 	overflow-y: scroll;
 	-ms-overflow-style: none;
-	scrollbar-width: none;
+    scrollbar-width: none;
+    margin-bottom: 20px;
 }
 
-.review-content::-webkit-scrollbar{
-    display: none;
+.review-content::-webkit-scrollbar {
+	display: none;
 }
-.review-content-heading{
-    margin-top: 10px;
+.review-content-heading {
+	margin-top: 10px;
 }
 
 @media screen and (max-width: 1093px) {
@@ -67,10 +68,19 @@
 @media screen and (max-width: 769px) {
 	.review-content {
 		/* background-color:black; */
-		height: 155px;
+        height: 155px;
+        width:98%
 	}
 	.senior-card-img-container {
 		width: 150px;
 		height: 150px;
 	}
+}
+
+@media screen and (max-width: 519px) {
+	.review-content {
+        width:95%;
+        height: 185px;
+	}
+	
 }

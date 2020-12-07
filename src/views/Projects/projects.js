@@ -2,6 +2,8 @@ import React from "react";
 import IndexNavbar from "../../components/Navbars/IndexNavbar";
 import "./style.css";
 import SDC from "../../assets/gifs/SDC.gif";
+import VR from "../../assets/gifs/VR.gif";
+import imgDesc from "../../assets/gifs/imgDesc.gif"
 import DemoFooter from "components/Footers/DemoFooter";
 
 const Projects = () => {
@@ -150,13 +152,13 @@ const Projects = () => {
 					<div className="events-body row">
 						<img
 							alt="gif"
-							src={"./assets/foo.jpg"}
+							src={imgDesc}
 							className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 border--round box-shadow-wide gif"
 						/>
 						<div className="event-body-text col-xl-5 col-lg-5 col-md-5 col-sm-5 col-12">
 							<h3 className="event-body-text-heading">Image Description for blind people</h3>
-							<p><b>Owner: <a href='https://linkedin.com/in/kushagra-wadhwa12/' className='bold'>Puneet 
-							Kumar Sehrawat</a> | Link/Code: <a href="https://github.com/" className='bold'>...</a></b></p>
+							<p><b>Owner: <a href='https://www.linkedin.com/in/puneet-kumar-sehrawat-4b3312197/' className='bold'>Puneet 
+							Kumar Sehrawat</a> | Link/Code: <a href="https://github.com/seneark/Image-Captioning" className='bold'>GitHub</a></b></p>
 							<h5 className="event-body-text-content">
 							Built a GUI for blind people where they can upload an image and get 
 							its Description in audio as well as text form.
@@ -172,22 +174,24 @@ const Projects = () => {
 					<div className="events-body row">
 						<div className="event-body-text col-xl-5 col-lg-5 col-md-5 col-sm-5 col-12">
 							<h3 className="event-body-text-heading">FoodZen 360 </h3>
-							<p><b>Owner: <a href='https://linkedin.com/in/kushagra-wadhwa12/' className='bold'>Puneet Kumar 
+							<p><b>Owner: <a href='https://www.linkedin.com/in/puneet-kumar-sehrawat-4b3312197/' className='bold'>Puneet Kumar 
 							Sehrawat </a>  | 
-							Link/Code: <a href="https://github.com/" className='bold'>...</a> </b></p>
+							Link/Code: <a href="https://github.com/seneark/FoodieHub" className='bold'>GitHub</a> </b></p>
 							<h5 className="event-body-text-content">
 							Built an app where a person will get personalized suggestions for 
 							restaurants based on their previous favorite orders and they can also 
 							see a 360 degree VR view of the restuarant to ascertain whether it is 
 							suitable to visit that restaurant or not.
 							</h5>
-							<div className='inline'>
-								<h5 className='tag ml'>Machine Learning</h5>
+							<div className='inline' style={{display:"flex"}}>
+								<h5 className='tag dbs'>DBMS</h5>
+								&nbsp; &nbsp;
+								<h5 className='tag ml'>VR</h5>
 							</div>
 						</div>
 						<img
 							alt="cover"
-							src={"./assets/foo.jpg"}
+							src={VR}
 							className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 border--round box-shadow-wide"
 						/>
 					</div>

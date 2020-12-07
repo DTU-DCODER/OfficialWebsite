@@ -73,18 +73,22 @@ function IndexNavbar(props) {
 						</NavItem>
 
 						<NavItem>
-							<NavLink href='/projects'>Projects</NavLink>
+							<NavLink href="/projects">Projects</NavLink>
 						</NavItem>
 
 						<NavItem>
-							<NavLink href='/meetOurSeniors'>Meet Our Seniors</NavLink>
+							<NavLink href="/meetOurSeniors">Meet Our Seniors</NavLink>
+
+							<NavLink href="/meetOurSeniors">Meet Our Seniors</NavLink>
 						</NavItem>
 
 						<NavItem>
 							<NavLink href="/AboutUs">About Us</NavLink>
 						</NavItem>
 						<NavItem>
-							<Button color="primary" href='/member'>Member Login</Button>
+							<Button color="primary" href="/member">
+								Member Login
+							</Button>
 						</NavItem>
 					</Nav>
 				</Collapse>
