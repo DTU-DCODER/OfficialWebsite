@@ -38,8 +38,10 @@ function LandingPage() {
       <IndexNavbar />
       <IndexHeader />
       <div className="main">
-        <div className="section text-center">
-          <Container>
+        <div className="section text-center"
+          >
+          <Container
+          >
             <h2 className="title mb-5">Internship/Placement</h2>
             <Row>
               <Col md="3">
@@ -94,66 +96,96 @@ function LandingPage() {
             <br />
             <br />
             <Row>
-              <Col md="3">
+              <Col md="4">
                 <div className="info">
                   <div className="icon icon-info">
                     <i className="nc-icon nc-album-2" />
                   </div>
                   <div className="description">
-                    <h4 className="info-title">Beautiful Gallery</h4>
-                    <p className="description">
-                      Spend your time generating new ideas. You don't have to
-                      think of implementing.
+                    <h4 className="info-title">Training and Mentorship</h4>
+                    <p className="description mt-2">
+                    Get specialised training and mentorship from our expert mentors, whom you can turn to for guidance and resolving any queries you have while coding.
                     </p>
                     
                   </div>
                 </div>
               </Col>
-              <Col md="3">
+              <Col md="4">
                 <div className="info">
                   <div className="icon icon-info">
                     <i className="nc-icon nc-bulb-63" />
                   </div>
                   <div className="description">
-                    <h4 className="info-title">New Ideas</h4>
-                    <p>
-                      Larger, yet dramatically thinner. More powerful, but
-                      remarkably power efficient.
+                    <h4 className="info-title">Build a Network</h4>
+                    <p className="description mt-2">
+                    Join the community and build a network with our illustrious alumni, seniors and peers united by a common desire to continuously learn, interact, collaborate, and innovate.
                     </p>
                     
                   </div>
                 </div>
               </Col>
-              <Col md="3">
+              <Col md="4">
                 <div className="info">
                   <div className="icon icon-info">
                     <i className="nc-icon nc-chart-bar-32" />
                   </div>
                   <div className="description">
-                    <h4 className="info-title">Statistics</h4>
-                    <p>
-                      Choose from a veriety of many colors resembling sugar
-                      paper pastels.
+                    <h4 className="info-title">Build amazing projects</h4>
+                    <p className="description mt-2">
+                    Get a chance to be a part of amazing real life projects under our development team or take guidance from our seniors to make great personal projects.
                     </p>
                     
                   </div>
                 </div>
               </Col>
-              <Col md="3">
+              
+            </Row>
+
+            <Row className="mt-5">
+              <Col md="4">
                 <div className="info">
                   <div className="icon icon-info">
-                    <i className="nc-icon nc-sun-fog-29" />
+                    <i className="nc-icon nc-album-2" />
                   </div>
                   <div className="description">
-                    <h4 className="info-title">Delightful design</h4>
-                    <p>
-                      Find unique and handmade delightful designs related items
-                      directly from our sellers.
+                    <h4 className="info-title">Win Hackathons</h4>
+                    <p className="description mt-2">
+                    With numerous wins in different hackathons by the D_CODER team you can also make a team, learn and get proper guidance from our experienced seniors.
                     </p>
                     
                   </div>
                 </div>
               </Col>
+              <Col md="4">
+                <div className="info">
+                  <div className="icon icon-info">
+                    <i className="nc-icon nc-bulb-63" />
+                  </div>
+                  <div className="description">
+                    <h4 className="info-title">Organise Events</h4>
+                    <p className="description mt-2">
+                    Learn management and build your personality by organizing your own tech events with D_CODER dtu.
+Is organizing a tech event your deepest desire? Have no worries because D_CODER encourages members to organize their own events with assistance.
+                    </p>
+                    
+                  </div>
+                </div>
+              </Col>
+              <Col md="4">
+                <div className="info">
+                  <div className="icon icon-info">
+                    <i className="nc-icon nc-chart-bar-32" />
+                  </div>
+                  <div className="description">
+                    <h4 className="info-title">Tech initiative</h4>
+                    <p className="description mt-2">
+                    Be a part of different social and tech initiatives with us, help promote coding culture and bring a change in the society.
+                    </p>
+                    
+                  </div>
+                </div>
+              </Col>
+              
             </Row>
           </Container>
         </div>
@@ -370,6 +402,46 @@ function LandingPage() {
             </Row>
           </Container>
         </div> */}
+
+        <div
+          style={{
+            backgroundColor: '#e6e6e6',
+            paddingTop: 30,
+            paddingBottom: 70
+          }}
+        >
+        <h2 className="title"
+          style={{
+            textAlign: 'center',
+            marginBottom: '50px'
+          }}
+        >About Us</h2>
+
+        <Row>
+          <Col md="6">
+            <img src="https://i.pinimg.com/originals/89/86/d6/8986d6bfbb13ab11f47d68e273c9714e.jpg" alt=""
+              style={{
+                width: '30vw',
+                float: 'right',
+                borderRadius: 10,
+                
+              }}
+            />
+          </Col>
+
+          <Col md="4">
+                <p
+                    style={{
+                        marginTop: 'auto',
+                        marginBottom: 'auto',
+                        fontSize: 16,
+                        padding: 20,
+                    }}                
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea architecto rem neque quis assumenda delectus consequatur, eos aliquam est necessitatibus quibusdam placeat explicabo, vitae hic modi doloremque odit ipsa expedita ducimus at. Molestias, quisquam ipsam odio facilis qui, inventore impedit nam architecto tempore eligendi aut, ad delectus repellat minus quo.</p>
+            </Col>
+        </Row>
+        </div>
+
       </div>
       <DemoFooter />
     </>
