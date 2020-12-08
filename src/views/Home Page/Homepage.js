@@ -38,8 +38,10 @@ function LandingPage() {
       <IndexNavbar />
       <IndexHeader />
       <div className="main">
-        <div className="section text-center">
-          <Container>
+        <div className="section text-center"
+          >
+          <Container
+          >
             <h2 className="title mb-5">Internship/Placement</h2>
             <Row>
               <Col md="3">
@@ -400,6 +402,46 @@ Is organizing a tech event your deepest desire? Have no worries because D_CODER 
             </Row>
           </Container>
         </div> */}
+
+        <div
+          style={{
+            backgroundColor: '#e6e6e6',
+            paddingTop: 30,
+            paddingBottom: 70
+          }}
+        >
+        <h2 className="title"
+          style={{
+            textAlign: 'center',
+            marginBottom: '50px'
+          }}
+        >About Us</h2>
+
+        <Row>
+          <Col md="6">
+            <img src="https://i.pinimg.com/originals/89/86/d6/8986d6bfbb13ab11f47d68e273c9714e.jpg" alt=""
+              style={{
+                width: '30vw',
+                float: 'right',
+                borderRadius: 10,
+                
+              }}
+            />
+          </Col>
+
+          <Col md="4">
+                <p
+                    style={{
+                        marginTop: 'auto',
+                        marginBottom: 'auto',
+                        fontSize: 16,
+                        padding: 20,
+                    }}                
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea architecto rem neque quis assumenda delectus consequatur, eos aliquam est necessitatibus quibusdam placeat explicabo, vitae hic modi doloremque odit ipsa expedita ducimus at. Molestias, quisquam ipsam odio facilis qui, inventore impedit nam architecto tempore eligendi aut, ad delectus repellat minus quo.</p>
+            </Col>
+        </Row>
+        </div>
+
       </div>
       <DemoFooter />
     </>
