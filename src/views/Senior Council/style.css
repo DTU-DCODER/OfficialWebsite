@@ -20,3 +20,29 @@
     margin: auto;
     text-align: center;
 }
+
+.car {
+    max-height: 300px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.carr {
+    max-width: 250px;
+    max-height: 250px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+.w80 {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.img_senior2 {
+    max-width: 175px;
+    margin-top: 40px;
+    border-radius: 120px;
+    margin-left: 70px;
+    max-height: 150px;
+}

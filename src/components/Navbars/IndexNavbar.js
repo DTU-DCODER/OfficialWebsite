@@ -12,11 +12,11 @@ import {
   NavLink,
   Nav,
   Container,
-  ButtonGroup,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  UncontrolledDropdown
+  // ButtonGroup,
+  // DropdownToggle,
+  // DropdownMenu,
+  // DropdownItem,
+  // UncontrolledDropdown
 } from "reactstrap";
 
 function IndexNavbar(props) {
@@ -96,7 +96,7 @@ function IndexNavbar(props) {
             </NavItem>
 
             <NavItem>
-              <NavLink href="/meetOurSeniors">Council</NavLink>
+              <NavLink href="/council">Council</NavLink>
             </NavItem>
 
 
