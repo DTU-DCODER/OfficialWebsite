@@ -18,13 +18,44 @@ p, h1, h2, h3, h4, h5, h6 {
     color: white !important;
 }
 
+.presentation-title {
+    font-size: calc(6vh + 3vw) !important;
+}
 
 .presentation-title {
     font-size: calc(5vh + 5vw);
 }
-canvas{
+
+.presentation-subtitle {
+    font-size: 2.2em;
+    color: #FFFFFF !important;
+    width: 90%;
+    margin: auto;
+}
+.title-brand {
+    max-width: 730px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    color: #FFFFFF;
+    display: block;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 575px){
+    .presentation-subtitle {
+        font-size: 2.2em;
+        color: #FFFFFF !important;
+        width: 50%;
+        margin: auto;
+    }
+}
+
+canvas {
     position: absolute !important;
-    width: 110vw !important;
+    width: 200vw !important;
     left: -50% !important;
 }
 

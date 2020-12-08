@@ -72,7 +72,7 @@ function LandingPage() {
             </Row>
 
             <div style={{width: "100", height: "100%", position: "relative"}}>
-              <ParticlesBg num={7} type="circle" bg={true}/>
+              <ParticlesBg num={10} type="circle" bg={true}/>
               <Row>
                 <Col className="ml-auto mr-auto" md="8">
                   <h2 className="title">Why Join D_CODER?</h2>
