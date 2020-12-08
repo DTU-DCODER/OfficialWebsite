@@ -36,7 +36,7 @@ ReactDOM.render(
 
 			<Route path={"/AboutUs"} exact component={AboutUs} />
 			<Route path={"/meetOurSeniors"} exact component={MeetOurSeniors} />
-			<Route path={"/seniorCouncil"} exact component={SeniorCouncil} />
+			<Route path={"/council"} exact component={SeniorCouncil} />
 			<Route path={"/juniorCouncil"} exact component={JuniorCouncil} />
 			<Route path="/" render={(props) => <HomePage {...props} />} />
 			<Redirect to="/" />
