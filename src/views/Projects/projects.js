@@ -106,9 +106,10 @@ const Projects = () => {
     <div>
       <IndexNavbar noPhoto/>
       <div className="events-container container">
-        <h1>Events</h1>
-        <p>D_Coders promises ______</p>
+        <h1>Projects</h1>
+        <p>Proejcts carried out by members of D_CODER</p>
         <div className="events-container-body">
+          
           {isMobile
             ? projects.map((item, idx) => {
               return (

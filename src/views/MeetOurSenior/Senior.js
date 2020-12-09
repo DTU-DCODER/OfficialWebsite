@@ -7,6 +7,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./style.css";
+import DemoFooter from "components/Footers/DemoFooter";
 
 const SampleNextArrow = (props) => {
   const {className, style, onClick} = props;
@@ -227,6 +228,7 @@ const Senior = (props) => {
           )}
         </div>
       </div>
+      <DemoFooter />
     </div>
   );
 };
