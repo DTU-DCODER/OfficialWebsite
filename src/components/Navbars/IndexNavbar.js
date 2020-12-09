@@ -63,6 +63,7 @@ function IndexNavbar(props) {
                   height: "calc(1.5vh + 1.5vh)",
                   margin: 0,
                   padding: 0,
+                  marginRight: 5
                 }}
               />
               D_Coder

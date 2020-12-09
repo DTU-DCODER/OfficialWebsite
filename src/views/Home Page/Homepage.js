@@ -38,8 +38,10 @@ function LandingPage() {
 
       <IndexNavbar/>
       <IndexHeader/>
+      <br/>
+      <br/>
       <div className="main" style={{overflow: "hidden"}}>
-        <div className="section text-center">
+        <div className="text-center">
           <Container>
 
             <h2 className="title mb-5">Internship/Placement</h2>

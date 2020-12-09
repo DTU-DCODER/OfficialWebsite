@@ -30,6 +30,7 @@ ReactDOM.render(
 			<Route path="/landing-page" render={(props) => <LandingPage {...props} />} />
 			<Route path="/profile-page" render={(props) => <ProfilePage {...props} />} />
 			<Route path="/register-page" render={(props) => <RegisterPage {...props} />} />
+
 			<Route path={"/events"} exact component={Events} />
 			<Route path={"/projects"} exact component={Projects} />
 			<Route path={"/member"} exact component={Coming} />

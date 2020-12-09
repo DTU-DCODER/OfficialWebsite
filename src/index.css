@@ -58,7 +58,22 @@ canvas {
     width: 200vw !important;
     left: -50% !important;
 }
-
+.credits{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.credits i{
+    margin-left: 10px;
+}
+.footer-nav{
+    display: flex;
+    align-items: center;
+}
+.copyright{
+    font-size: 20px !important;
+    color: black !important;
+}
 @media screen and (min-width: 990px) {
     .nav-item a {
         font-size: 17px !important;

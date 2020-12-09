@@ -20,46 +20,35 @@
 import React from "react";
 
 // reactstrap components
-import { Row, Container } from "reactstrap";
+import {Row, Container} from "reactstrap";
 
 function DemoFooter() {
   return (
     <footer className="footer footer-black footer-white">
       <Container>
         <Row>
-          <nav className="footer-nav">
-            <ul>
-              <li>
-                <a
-                  href="/AboutUs"
-                  
-                >
-                  About Us
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/projects"
-                 
-                >
-                  Projects
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/events"
-              
-                >
-                  Events
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <div className="credits ml-auto">
-            <span className="copyright">
-              © {new Date().getFullYear()}, made with{" "}
-              <i className="fa fa-heart heart" /> by D_CODER
+
+          <div className="footer-nav">
+            <img
+              alt="logo"
+              src={"./blue.png"}
+              style={{
+                height: "calc(1.5vh + 1.5vh)",
+                margin: 0,
+                padding: 0,
+              }}
+            />
+            <span className="copyright bold">D_CODER
             </span>
+
+          </div>
+          <div className="credits ml-auto">
+            <p> Contact Us on</p>
+            <a href={"https://www.instagram.com/d_coder_dtu/"}> <i style={{fontSize: 20}} className="fa fa-instagram"
+                                                                   aria-hidden="true"></i></a>
+            <a href={"https://www.linkedin.com/company/dcoder/"}> <i style={{fontSize: 20}}
+                                                                     className="fa fa-linkedin-square"
+                                                                     aria-hidden="true"></i></a>
           </div>
         </Row>
       </Container>
