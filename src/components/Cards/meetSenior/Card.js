@@ -17,8 +17,7 @@ const CardCom = (props) => {
               <img className="senior-card-img" src={props.src} alt="profileImg"/>
             </div>
             <h6 className="no-mp senior-name">{props.name}</h6>
-
-            <h6 className="no-mp senior-college">Company</h6>
+            <h6 className="no-mp senior-college">{props.company}</h6>
           </div>
         </div>
         <div className={"right-container"}>
